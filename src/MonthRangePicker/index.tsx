@@ -122,7 +122,7 @@ export const MonthRangePicker: React.FC<MonthRangePickerProps> = ({
   }
 
   useEffect(() => {
-    if (startMonth && endMonth) {
+    if (startMonth) {
       const getInitialYear = startMonth.getFullYear()
       const getFinalYear = endMonth.getFullYear()
       const initialMonth = startMonth.getMonth() + 1
